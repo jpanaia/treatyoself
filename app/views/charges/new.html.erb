@@ -1,0 +1,38 @@
+<h1>Your Wish List</h1><br/>
+
+<div class="row">
+  <div class="col-md-4">
+  	<div class="well">
+	  	<h3>The Clapper Sound Activated On/Off Switch</h3>
+	  	<%= image_tag "clapper.jpg", class: "img-responsive" %><br/>
+	  	<a href="http://www.amazon.com/Clapper-Sound-Activated-Switch-Each/dp/B0000CGKLR/ref=sr_1_1?ie=UTF8&qid=1426023567&sr=8-1&keywords=the+clapper" class="btn btn-default" class="btn btn-default">View on Amazon</a>
+	 </div>
+  </div>
+  <div class="col-md-4">
+  	<div class="well">
+  		<h3>SmartWool Margarita Womens Socks</h3>
+  	  <%= image_tag "socks.jpeg", class: "img-responsive" %>
+  	  <br/><a href="http://www.amazon.com/SmartWool-Margarita-Sock-Womens-Heather/dp/B006RFQVUU/ref=sr_1_2?ie=UTF8&qid=1426023853&sr=8-2&keywords=smartwool+socks" class="btn btn-default">View on Amazon</a>
+  	 </div>
+  </div>
+  <div class="col-md-4">
+  	<div class="well">
+  	<h3>DEWALT DW745 10-Inch Compact Job-Site Table Saw</h3>
+  	<%= image_tag "saw.jpg", class: "img-responsive" %><br/>
+  	  <a href="http://www.amazon.com/DEWALT-DW745-10-Inch-Job-Site-Capacity/dp/B000HXT2N6/ref=sr_1_1?s=power-hand-tools&ie=UTF8&qid=1426023940&sr=1-1&keywords=table+saw" class="btn btn-default">View on Amazon</a>
+  	 </div>
+  </div>
+</div>
+
+<div>
+<%= form_tag charges_path do %>
+<div class="row">
+	<div class="col-sm-6 col-sm-offset-3">
+
+	<div id="contribution">
+		<h3>Monthly Contribution: $20.00<br/><br/>
+		<script src="https://checkout.stripe.com/checkout.js" class="stripe-button" data-key="<%=Rails.configuration.stripe[:publishable_key] %>" data-description="A month's subscription" data-amount="2000"></script></h3>
+	  </div>
+  <% end %>
+  </div> 
+</div>

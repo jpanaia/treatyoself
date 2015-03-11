@@ -1,0 +1,102 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+body {
+	background: #000
+}
+
+h1, h2, h3, h4 {
+	color:#fff;
+}
+
+header{ 
+  background: #fff;
+  color: #000;
+  height: 100px;
+  margin-top: 0;
+  padding-top: 32px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+
+h1{
+	font-family: 'Playfair Display', serif;
+	font-weight: bold;
+}
+
+h1 + p {
+	color:#fff;
+	font-size:20px;
+}
+h2 {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-weight: 400;
+}
+
+h3 {
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+.well {
+	text-align:center;
+	background-color: #fff;
+	padding: 20px;
+}
+
+  .well img {
+  	width: 150px;
+  	margin: auto;
+  }
+
+  .well h3 {
+  	color: #333;
+  	font-size: 18px;
+  }
+
+  .well p {
+  	font-size: 1.5em;
+  }
+
+#contribution h3{
+	width: 100%;
+	padding: 20px 0;
+	border: 1px solid #ccc;
+	text-align: center;
+	background: rgba(0,0,0,0.2);
+}
+
+.carousel-caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  padding: 20px 40px;
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+.btn-lg {
+	text-transform: uppercase;
+	padding: 10px 20px;
+}
